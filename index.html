@@ -14,7 +14,7 @@
     <button>About us</button>
     <button>ABO</button>
 
-    <but>
+    
     </div>
 
 
@@ -47,7 +47,7 @@
 </section>
 
 </div>
-  </div>
+  <div>
 
     
     <h1>
@@ -70,3 +70,48 @@
     <h2>Memeorys Cake: Revolutioner und lecker </h2>
 <p>Erst vor ein paar tagen erfanden Wissenschaftler in Deutschland denn sogennanten Memeorys Cake,und schon ist er über all im trend./p>
   <p
+
+  html>
+  <html lang="de">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Weltweite News</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="navi">
+          <button onclick="showSection('home')">Home</button>
+          <button onclick="showSection('about')">About Us</button>
+          <button onclick="showSection('abo')">ABO</button>
+      </div>
+  
+      <h1>WORLD NEWS</h1>
+  
+      <div id="home" class="content">
+          <h2>Einhörner gesichtet</h2>
+          <p>Immer mehr Einhörner werden weltweit gesichtet, vor allem in Deutschland berichten immer mehr Leute, diese besonderen Wesen gesichtet zu haben.</p>
+          <img src="praechtiges-einhorn-in-der-natur.jpg" alt="Einhorn" width="600" height="500">
+          <p>Eine Zeugin berichtete: "Ich war gerade beim Wandern im schönen Bayern, da sah ich sie plötzlich vom Himmel fliegen, Einhörner. Diese besonderen Kreaturen landeten auf einer Wiese neben mir und grasten. Sie waren so schön mit weißem Fell und einem golden glänzenden Horn." Die Wissenschaftler sind ratlos, woher und wie diese Einhörner gekommen sind. Wir haben mit einer bekannten Wissenschaftlerin (Dr. B) geredet und sie meinte, dass diese Geschöpfe nur von einem uns nicht bekannten Planeten stammen könnten.</p>
+      </div>
+  
+      <div id="abo" class="content" style="display: none;">
+          <h2>ABO</h2>
+          <!-- Inhalt für ABO -->
+      </div>
+  
+      <div id="about" class="content" style="display: none;">
+          <h2>About Us</h2>
+          <!-- Inhalt für About Us -->
+      </div>
+  
+      <script>
+          function showSection(section) {
+              document.getElementById('home').style.display = 'none';
+              document.getElementById('abo').style.display = 'none';
+              document.getElementById('about').style.display = 'none';
+              document.getElementById(section).style.display = 'block';
+          }
+      </script>
+  </body>
+  </html>
